@@ -5,6 +5,7 @@ Console game - Flappy Bird. Try it! Download and start game! Good luck!
 ``` batch
 py main.py
 ```
+or start "start.bat"
 
 # Dependencies
 * os
