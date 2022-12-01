@@ -1,3 +1,3 @@
 @echo off
 py main.py
-pause
+pause > nul
