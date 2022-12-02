@@ -267,15 +267,17 @@ class Keyboard:
 					Keyboard.pressedKeys[i.key]["prew"] = Keyboard.pressedKeys[i.key]["status"]
 					Keyboard.pressedKeys[i.key]["status"] = True
 
-					Keyboard.pressedKeys["ANY"]["prew"] = Keyboard.pressedKeys["ANY"]["status"]
-					Keyboard.pressedKeys["ANY"]["status"] = True
+					# if Keyboard.pressedKeys["ANY"]: 
+					# 	Keyboard.pressedKeys["ANY"]["prew"] = Keyboard.pressedKeys["ANY"]["status"]
+					# 	Keyboard.pressedKeys["ANY"]["status"] = True
 
 				elif e.event_type == "up":
 					Keyboard.pressedKeys[i.key]["prew"] = Keyboard.pressedKeys[i.key]["status"]
 					Keyboard.pressedKeys[i.key]["status"] = False
 
-					Keyboard.pressedKeys["ANY"]["prew"] = Keyboard.pressedKeys["ANY"]["status"]
-					Keyboard.pressedKeys["ANY"]["status"] = False
+					# if Keyboard.pressedKeys["ANY"]: 
+					# 	Keyboard.pressedKeys["ANY"]["prew"] = Keyboard.pressedKeys["ANY"]["status"]
+					# 	Keyboard.pressedKeys["ANY"]["status"] = False
 
 		if Keyboard.useDefaultTick: Keyboard.tick()
 
